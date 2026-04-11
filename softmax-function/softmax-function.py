@@ -10,5 +10,5 @@ def softmax(x):
     x = np.asarray(x, dtype=float)
     x_max = np.max(x, axis=x.ndim-1, keepdims=True)
     return np.exp(x-x_max)/np.sum(np.exp(x-x_max), axis=x.ndim-1,
-                                  keepdims=True)
+    keepdims=True)
     pass
